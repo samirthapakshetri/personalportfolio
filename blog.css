@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: 'Public Sans', sans-serif;
+}
+
+/* Main Content Layout */
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  flex-direction: column;
+}
+
+/* Blog Posts Flexbox Container */
+#flexbox {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/* Individual Blog Post Cards */
+#flexbox > div {
+  display: flex;
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  flex-direction: column;
+}
+
+.paragraph {
+  font-size: 12px;
+}
+
+/* Side Navigation Bar */
+.side-nav1 {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  width: 40px;
+  background-color: #F6F6F8;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 100;
+}
+ 
+.side-nav1:hover {
+  width: 65px;
+  background-color: #F6F6F8;
+}
+     
+.nav-item1 {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  padding: 15px 20px;
+  color: #F6F6F8;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-item1:hover {
+  mix-blend-mode: normal;
+}
+
+/* Social Media Icons */
+img {
+  height: 20px;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.side-nav1:hover img {
+  opacity: 1;
+}

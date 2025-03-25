@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta information and document setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link href='https://fonts.googleapis.com/css?family=Public Sans' rel='stylesheet'>
+</head>
+
+<body class="index">
+  <!-- Top Navigation bar -->
+  <div id="nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="work.html">Works</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Side navigation bar with social media links -->
+  <nav class="side-nav">
+    <div class="logo"></div>
+    <div class="side-nav-items">
+      <a href="#" class="nav-item">
+        <div class="nav-item-text"><img src="img/facebook.png" alt="facebook" class="logo"></div>
+      </a>
+      <a href="#" class="nav-item">
+        <div class="nav-item-text"><img src="img/github.png" alt="github" class="logo"></div>
+      </a>
+      <a href="#" class="nav-item">
+        <div class="nav-item-text"><img src="img/linkedin.png" alt="linkedin" class="logo"></div>
+      </a>
+    </div>
+  </nav>
+  
+  <!-- Main content area -->
+  <main>
+    <!-- Bio section with profile picture and animated text -->
+    <div id="bio">
+      <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="standing" class="profile" id="profile">
+      
+      <!-- Typewriter animation container -->
+      <div class="typewriter">
+        <span class="constant">I am </span><span class="changing"></span>
+      </div>
+      
+      <!-- Introduction text and CTA button -->
+      <div id="intro">
+        <span id="intro1">A newbie Programmer</span><br>
+        <span id="intro2">This portfolio showcases Nothing. </span>
+        <span id="button">
+          <button class="button">Go Down</button>
+        </span>
+      </div>
+    </div>
+  </main>
+  
+  <!-- JavaScript for typewriter animation -->
+  <script>
+    // Array of phrases to display in the typewriter animation
+    const phrases = ["Samir", "God", "You", "He/Him"];
+    const changingElement = document.querySelector('.changing');
+    let currentPhrase = 0;
+    let repeatCount = 0;
+    const maxRepeats = 1; // Number of times to repeat each phrase
+    
+    function showPhrase() {
+      // Set current phrase
+      changingElement.textContent = phrases[currentPhrase];
+      
+      // Reset animation
+      changingElement.style.animation = 'none';
+      void changingElement.offsetWidth; // Trigger reflow
+      changingElement.style.animation = 'typing 4.5s steps(40, end) forwards';
+      
+      // Set timeout for next action
+      setTimeout(() => {
+        repeatCount++;
+        
+        if (repeatCount >= maxRepeats) {
+          // Move to next phrase
+          currentPhrase = (currentPhrase + 1) % phrases.length;
+          repeatCount = 0;
+        }
+        
+        // Queue next animation
+        showPhrase();
+      }, 4500);
+    }
+    
+    // Start the animation
+    showPhrase();
+  </script>
+</body>
+</html>
