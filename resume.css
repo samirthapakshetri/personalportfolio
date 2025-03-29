@@ -9,7 +9,7 @@
 .buttonresume {
   background-color: transparent;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 20px;
   border: 1px solid #d1d1d1;
   border-radius: 50px;
@@ -49,6 +49,7 @@
     font-weight: 600;
   }
   .resumepad{
+    font-family: "Public Sans", "Public Sans Placeholder", sans-serif;
     display: flex;
     margin-top: 0;
     background-color: #F6F6F8;
@@ -84,7 +85,7 @@
   }
   .paragraph1{
     width: 90%;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
     color: rgb(110, 110, 115);
   }
@@ -93,7 +94,7 @@
     margin-top: -40px;
     padding-left: 25%;
     width: 50%;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
     color: rgb(110, 110, 115);
   }
@@ -107,6 +108,8 @@
   transition: width 0.3s ease;
   overflow: hidden;
   z-index: 100;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
  
 .side-nav1:hover {

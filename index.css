@@ -13,16 +13,17 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 70px;
   background: black;
-  height: 70px;
-  padding-right: 50px;
+  height: 90px;
+  padding-right: 90px;
   margin-top: 0; 
   align-items: center;
 }
 
 li {
-  font-size: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   background: black;
 }
 
@@ -30,17 +31,19 @@ li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
   background: black;
-  font-size: 16px;
-  height: 70px;
+  font-size: 20px;
+  line-height:px;
 }
 
 /* Link States */
 a:hover {
-  color: red;
+  color: white;
 }
 
-a:active {
-  color: red;
+ul li a.active {
+  color: white; 
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 
 /* Bio Section */
@@ -66,33 +69,49 @@ a:active {
 
 /* Typewriter Animation */
 .typewriter {
-  font-size: 73px;
-  line-height: 88px;
+  font-size: 77px;
   color: #fff;
-  position: relative;
   white-space: nowrap;
-  margin: 0 auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  margin: 0 auto;
+  gap: 10px;
 }
 
 .constant {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .changing {
   display: inline-block;
+  position: relative;
   overflow: hidden;
+  white-space: nowrap;
   width: 0;
-  margin: 0;
-  animation: typing 4.5s steps(40, end) forwards;
+}
+
+.changing::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes typing {
-  0% { width: 0 }
-  15% { width: 100% }
-  85% { width: 100% }
-  100% { width: 0 }
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes deleting {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 /* Introduction Text */
@@ -103,21 +122,22 @@ a:active {
 }
 
 #intro1 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 28px;
   color: #fff;
-  margin-top: 4px;
+  margin-top: 16px;
 }
 
 #intro2 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   color: #fff;
-  padding-bottom: 40px;
+  margin-top: 16px;
 }
 
 /* Button Styles */
 .button {
+  margin-top: 20px;
   background-color: #ff4b5c; /* Red-pink color */
   color: white;
   font-size: 18px;
@@ -161,6 +181,9 @@ a:active {
   transition: width 0.3s ease;
   overflow: hidden;
   z-index: 100;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -2px 2px 10px rgba(0,0,0,0.1);
 }
  
 .side-nav:hover {
