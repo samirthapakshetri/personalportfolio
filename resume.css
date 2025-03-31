@@ -62,11 +62,17 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 85vh;
+    height: 75vh;
+    font-family:  "Public Sans", "Public Sans Placeholder", sans-serif;
+  }
+  h1 {
+    font-size: 73px;
+    line-height: 20px;
+    font-weight: 600;
   }
   #flexbox {
     display: flex;
-    margin-top: 55px;
+    margin-top: 90px;
     justify-content: space-between;
     flex-direction: row;
     margin-right: 13%;
@@ -86,8 +92,10 @@
   .paragraph1{
     width: 90%;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 28px;
     color: rgb(110, 110, 115);
+    font-weight: 500;
+    margin-top: 15px;
   }
   .paragraph2{
     margin-bottom: -30px;
@@ -97,6 +105,7 @@
     font-size: 20px;
     line-height: 26px;
     color: rgb(110, 110, 115);
+    font-weight: 500;
   }
 /* side nav bar */ 
 .side-nav1 {
