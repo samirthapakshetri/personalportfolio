@@ -5,3 +5,9 @@
     background-color: #161617;
     font-family: 'Public Sans', sans-serif;
   }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
