@@ -66,17 +66,18 @@
     font-family:  "Public Sans", "Public Sans Placeholder", sans-serif;
   }
   h1 {
+    margin: 0;
     font-size: 73px;
-    line-height: 20px;
+    line-height: 88px;
     font-weight: 600;
   }
   #flexbox {
     display: flex;
-    margin-top: 90px;
     justify-content: space-between;
     flex-direction: row;
     margin-right: 13%;
     margin-left: 13%;
+    margin-top: 40px;
   }
   #flexbox > div {
     display: flex;
@@ -91,18 +92,15 @@
   }
   .paragraph1{
     width: 90%;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
     color: rgb(110, 110, 115);
     font-weight: 500;
-    margin-top: 15px;
   }
   .paragraph2{
-    margin-bottom: -30px;
-    margin-top: -40px;
     padding-left: 25%;
     width: 50%;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
     color: rgb(110, 110, 115);
     font-weight: 500;

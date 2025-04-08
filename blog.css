@@ -51,6 +51,8 @@ main {
   transition: width 0.3s ease;
   overflow: hidden;
   z-index: 100;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
  
 .side-nav1:hover {

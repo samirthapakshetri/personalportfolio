@@ -13,10 +13,10 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 70px;
+  gap: 60px;
   background: black;
-  height: 90px;
-  padding-right: 90px;
+  height: 70px;
+  padding-right: 70px;
   margin-top: 0; 
   align-items: center;
 }
@@ -31,8 +31,9 @@ li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
   background: black;
-  font-size: 20px;
-  line-height:px;
+  font-size: 16px;
+  line-height:26px;
+  font-weight: 500;
 }
 
 /* Link States */
@@ -69,7 +70,8 @@ ul li a.active {
 
 /* Typewriter Animation */
 .typewriter {
-  font-size: 77px;
+  font-size: 73px;
+  line-height: 88px;
   color: #fff;
   white-space: nowrap;
   display: inline-flex;
@@ -122,54 +124,55 @@ ul li a.active {
 }
 
 #intro1 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #fff;
-  margin-top: 16px;
+  font-weight: 500;
 }
 
 #intro2 {
-  font-size: 20px;
-  line-height: 26px;
-  color: #fff;
-  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(110, 110, 115);
+  font-weight: 500;
 }
-
-/* Button Styles */
-.button {
-  margin-top: 20px;
-  background-color: #ff4b5c; /* Red-pink color */
-  color: white;
-  font-size: 18px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  display: inline-block;
-  text-align: center;  
-}
-
-.button:hover {
-  background-color: #ff2e47; 
-  transform: scale(1.02);
-}
-
-.button:active {
-  background-color: #d42b3b; 
-  transform: scale(0.95);
-}
-
-.button-outline {
-  background-color: transparent;
-  color: #ff4b5c;
-  border: 2px solid #ff4b5c;
-}
-
-.button-outline:hover {
-  background-color: #ff4b5c;
-  color: white;
-}
+  /* Resume Button Styles */
+  .buttonresumeindex {
+    background-color: #1A1A1C;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+  
+  .buttonresumeindex:hover {
+    background-color: #0D0D0D;
+    transform: scale(1.02);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .buttonresumeindex:active {
+    background-color: #1A1A1C;
+    transform: scale(0.95);
+  }
+  
+  .buttonresumeindex-outline {
+    background-color: transparent;
+    color: #1A1A1C;
+    border: 2px solid #1A1A1C;
+  }
+  
+  .buttonresumeindex-outline:hover {
+    background-color: #1A1A1C;
+    color: white;
+  }
 
 /* Side Navigation Bar */
 .side-nav {
